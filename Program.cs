@@ -1,5 +1,6 @@
 ﻿string[] arrayWorld = new string[6];
 int lenghtArray = 0;
+
 for (int i = 0; i < 6; i++)
 {
     Console.WriteLine($"Напишите слово {i + 1}");
