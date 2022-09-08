@@ -1,24 +1,24 @@
-﻿string[] arrayWorld = new string[6];
+﻿string[] arrayWord = new string[6];
 int lenghtArray = 0;
 
 for (int i = 0; i < 6; i++)
 {
     Console.WriteLine($"Напишите слово {i + 1}");
-    arrayWorld[i] = Console.ReadLine();
-    if (arrayWorld[i].Length <= 3)
+    arrayWord[i] = Console.ReadLine();
+    if (arrayWord[i].Length <= 3)
     {
         lenghtArray++;
     }
 }
 string[] arrayMin = new string[lenghtArray];
 Console.WriteLine("Массив:");
-PrintArray (arrayWorld);
+PrintArray (arrayWord);
 lenghtArray = 0;
 for (int i = 0; i < 6; i++)
 {
-    if (arrayWorld[i].Length <= 3)
+    if (arrayWord[i].Length <= 3)
     {
-        arrayMin[lenghtArray] = arrayWorld[i];
+        arrayMin[lenghtArray] = arrayWord[i];
         lenghtArray++;
     }
 }
